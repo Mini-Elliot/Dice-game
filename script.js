@@ -13,6 +13,8 @@ const rollBtn = document.querySelector(".btn--roll");
 const holdBtn = document.querySelector(".btn--hold");
 const newBtn = document.querySelector(".btn--new");
 
+const winningScoreEl = document.querySelector(".winning-score");
+
 // modal
 const modal = document.querySelector(".announcement");
 const overlay = document.querySelector(".overlay");
@@ -28,7 +30,8 @@ const hideModal = () => {
 
 // variable
 let currentScore, scores, activePlayer;
-const winningScore = 10;
+const winningScore = 50;
+winningScoreEl.textContent = `Score required: ${50}`;
 
 score1El.textContent = 0;
 score2El.textContent = 0;

@@ -51,8 +51,22 @@ body {
 
 
 /* LAYOUT */
+
+.header {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.winning-score {
+    color: var(--secondary)
+}
+
 main {
-    width: 80vw;
+    max-width: 1200px;
+    width: 100%;
     background: var(--glass-bg);
     backdrop-filter: var(--blur);
     border-radius: var(--radius-lg);
