@@ -16,45 +16,49 @@
     </head>
     <body>
         <main>
-            <section class="player player--0 player--active">
-                <h2 class="name" id="name--0">Player 1</h2>
-                <p class="score" id="score--0">43</p>
-                <div class="current">
-                    <p class="current-label">Current</p>
-                    <p class="current-score" id="current--0">0</p>
-                </div>
-            </section>
-            <section class="player player--1">
-                <h2 class="name" id="name--1">Player 2</h2>
-                <p class="score" id="score--1">24</p>
-                <div class="current">
-                    <p class="current-label">Current</p>
-                    <p class="current-score" id="current--1">0</p>
-                </div>
-            </section>
-
-            <!-- modal -->
-            <div class="overlay hidden"></div>
-            <div class="announcement hidden">
-                <div class="announcement__header">
-                    <div class="announcement__title">Winner Announcement</div>
-                    <button class="close-btn hide-modal">&times;</button>
-                </div>
-                <div class="announcement__body">
-                    🎉 YAY! Player 1 Wins the game.
-                </div>
-                <div class="announcement__footer">
-                    <button type="button" class="play-again">Play Again</button>
-                    <button class="close-modal hide-modal">Close</button>
+            <div class="main__container">
+                <section class="player player--0 player--active">
+                    <h2 class="name" id="name--0">Player 1</h2>
+                    <p class="score" id="score--0">43</p>
+                    <div class="current">
+                        <p class="current-label">Current</p>
+                        <p class="current-score" id="current--0">0</p>
+                    </div>
+                </section>
+                <section class="player player--1">
+                    <h2 class="name" id="name--1">Player 2</h2>
+                    <p class="score" id="score--1">24</p>
+                    <div class="current">
+                        <p class="current-label">Current</p>
+                        <p class="current-score" id="current--1">0</p>
+                    </div>
+                </section>
+                <div class="buttons">
+                    <img src="dice-5.png" alt="Playing dice" class="dice" />
+                    <div>
+                        <button class="btn btn--roll">🎲 Roll dice</button>
+                        <button class="btn btn--hold">📥 Hold</button>
+                        <button class="btn btn--new">🔄 New game</button>
+                    </div>
                 </div>
             </div>
-            <!-- modal end -->
-
-            <img src="dice-5.png" alt="Playing dice" class="dice" />
-            <button class="btn btn--new">🔄 New game</button>
-            <button class="btn btn--roll">🎲 Roll dice</button>
-            <button class="btn btn--hold">📥 Hold</button>
         </main>
+        <!-- modal -->
+        <div class="overlay hidden"></div>
+        <div class="announcement hidden">
+            <div class="announcement__header">
+                <div class="announcement__title">Winner Announcement</div>
+                <button class="close-btn hide-modal">&times;</button>
+            </div>
+            <div class="announcement__body">
+                🎉 YAY! Player 1 Wins the game.
+            </div>
+            <div class="announcement__footer">
+                <button type="button" class="play-again">Play Again</button>
+                <button class="close-modal hide-modal">Close</button>
+            </div>
+        </div>
+        <!-- modal end -->
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     </body>
